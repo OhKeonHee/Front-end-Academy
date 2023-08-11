@@ -1,0 +1,73 @@
+/* #################### 상품정보 가져오기 ####################
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* #################### 10보다 작은 숫자를 입력하세요 #################### */
+/* body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+input {
+  width: 300px;
+  padding: 10px 20px;
+}
+button {
+  padding: 10px 20px;
+  margin-left: 20px;
+  width: 80px;
+} */
+
+/* #################### 커피주문 3초 후 주문완료 표시 #################### */
+/* #container {
+  width: 300px;
+  margin: 20px auto;
+}
+.active {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+}
+.done {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.8em;
+  font-style: italic;
+} */
+
+/* #################### 수강생 명단 JSON에서 가져오기 .ver(fetch)#################### */
+#container {
+  width: 400px;
+  margin: 20px auto;
+}
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+}
+#result {
+  width: 100%;
+  margin: 20px 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+}

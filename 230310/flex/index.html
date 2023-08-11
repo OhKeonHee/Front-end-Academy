@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+    }
+    main {
+      width: 100%;
+      height: 100vh;
+      background-color: lightcyan;
+    }
+    section {
+      border: 10px solid blue;
+      display: flex; /*flex는 inline처럼 세로로있던 article을 세로로 바꿈*/
+                            /*부모는 inline이지만 자녀는 block이라 article 5개 꽉채운 상자가 됨*/
+                            /*flex는 article 5개 하고도 뒤에 공백이 있음 덜채운 상자처럼*/
+      flex-direction: row;
+      flex-wrap: wrap; /*화면 줄였을때 박스가 공간이 모자라면 내려옴 안쓰면 반응형처럼 됨*/
+      /* = flex-flow: row wrap*/
+      /* justify-content: flex-end; 시작위치 좌우 바꿔줌 /center; 가운데 / space-between; 사이사이 공간 생김**/
+    }
+    article {
+      width: 100px; height: 100px;
+      background-color: aqua;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
+  </main>
+</body>
+</html>

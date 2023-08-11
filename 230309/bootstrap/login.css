@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-top: -200px;
+  margin-left: -150px;
+  width: 300px; height: 300px;
+  text-align: center;
+}
+form img {
+  margin-bottom: 10px;
+}
+form h3 {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+form .form-control {
+  height: 60px;
+}
+form button {
+  margin-bottom: 10%;
+}
+.main p {
+  opacity: 0.6;
+}

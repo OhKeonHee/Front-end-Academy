@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+}
+#container {
+  width: 800px;
+  margin: 20px auto;
+}
+form {
+  width: 520px;
+  height: auto;
+  padding-left: 10px;
+  margin: 50px auto;
+}
+fieldset {
+  border: 3px dotted royalblue;
+  padding: 30px 20px 30px 30px;
+  margin-bottom: 35px;
+}
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.field {
+  display: inline-block;
+  width: 60px;
+  font-weight: bold;
+  font-size: 0.9em;
+  line-height: 55px;
+  text-align: right;
+  margin-right: 15px;
+}
+.input-box {
+  width: 350px;
+  height: 35px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+}
+.order {
+  width: 100%;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  padding: 20px 0;
+}

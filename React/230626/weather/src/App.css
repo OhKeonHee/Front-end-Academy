@@ -1,0 +1,18 @@
+body {
+  background: url("https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?cs=srgb&dl=pexels-pixabay-531756.jpg&fm=jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.weather-box {
+  border: 3px solid #fff;
+  padding: 50px;
+  border-radius: 30px;
+  background-color: azure;
+}

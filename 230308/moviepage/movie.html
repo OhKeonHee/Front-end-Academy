@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="./script.js"></script>
+</head>
+<body>
+  <!--title-->
+  <hgroup id="title">
+    <h1 data-name="information">Information</h1>
+    <h1 data-name="character">Character</h1>
+    <h1 data-name="multimedia">Multimedia</h1>
+  </hgroup>
+  <!--container-->
+  <section id="container">
+    <div id="main" data-name="main" class="active">
+      <img src="./img/Middle_Foreground.png" alt="">
+    </div>
+    <div id="information" data-name="information">
+      <img src="./img/Information_Image.png" alt="">
+      <div class="description">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam unde itaque cupiditate, recusandae natus quibusdam, sit repudiandae iure quis est minus magnam officia explicabo mollitia voluptas. Eaque et minus exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos eligendi nesciunt, veniam eaque autem numquam quam dolores ratione? Quos, iure. Enim perspiciatis error dolorum quibusdam soluta, maxime exercitationem rem!</p>
+      </div>
+    </div>
+    <div id="character" data-name="character">
+      <a href="#">Left Button</a>
+      <a href="#">Right Button</a>
+      <article class="show">
+        <h1>Princess Ann</h1>
+        <img src="./img/Character_Text_1.png" alt="">
+        <img src="./img/Character_1.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat repudiandae excepturi reiciendis consectetur cumque quisquam quasi eaque quaerat eligendi laudantium ut, exercitationem, voluptas ab aut corrupti, suscipit voluptatum! Amet.</p>
+      </article>
+      <article>
+        <h1>Joe Bradely</h1>
+        <img src="./img/Character_Text_2.png" alt="">
+        <img src="./img/Character_2.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat repudiandae excepturi reiciendis consectetur cumque quisquam quasi eaque quaerat eligendi laudantium ut, exercitationem, voluptas ab aut corrupti, suscipit voluptatum! Amet.</p>
+      </article>
+      <article>
+        <h1>Radovich</h1>
+        <img src="./img/Character_Text_3.png" alt="">
+        <img src="./img/Character_3.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat repudiandae excepturi reiciendis consectetur cumque quisquam quasi eaque quaerat eligendi laudantium ut, exercitationem, voluptas ab aut corrupti, suscipit voluptatum! Amet.</p>
+      </article>
+    </div>
+    <div id="multimedia" data-name="multimedia">
+      <video src="#" width="940px" height="500px" controls="controls"></video>
+    </div>
+  </section>
+  <!--navigation-->
+  <nav id="main_nav">
+    <ul>
+      <li><a href="#" data-target="information">Infomation</a></li>
+      <li><a href="#" data-target="character">Character</a></li>
+      <li><a href="#" data-target="multimedia">Multimedia</a></li>
+      <li><a href="#">Download</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

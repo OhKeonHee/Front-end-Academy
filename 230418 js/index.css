@@ -1,0 +1,187 @@
+/* ------------------------- 03 (시간에 따른 이미지 변화)
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  border: 2px solid #ccc;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+} */
+
+/* ------------------------- 06 (span태그(X표시) 클릭하면 p태그 사라지게 하기) */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#cart {
+  margin: 50px auto;
+  width: 600px;
+  padding: 10px;
+}
+#cart h1 {
+  margin-bottom: 20px;
+}
+#products p {
+  font-size: 1.2em;
+  line-height: 3;
+}
+p span {
+  color: #ccc;
+  margin-right: 0.8em;
+  font-weight: bold;
+}
+p span:hover {
+  color: crimson;
+  cursor: pointer;
+} */
+
+/* ------------------------- 07 (book list 만들기) */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  margin: 50px auto;
+  width: 600px;
+  padding: 10px 20px;
+}
+li {
+  list-style: none;
+}
+#bookInfo {
+  margin-top: 40px;
+}
+#bookInfo li {
+  font-size: 1em;
+  line-height: 3;
+}
+#bookInfo label {
+  display: inline-block;
+  width: 50px;
+}
+#bookInfo input {
+  width: 450px;
+  padding: 5px;
+  outline: none;
+}
+button {
+  width: 150px;
+  margin: 20px 55px;
+  font-size: 1em;
+  padding: 5px 10px;
+}
+#bookList {
+  width: 500px;
+  margin-top: 50px;
+  position: relative;
+}
+#bookList li {
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+}
+.delButton {
+  position: absolute;
+  right: 10px;
+  border-left: 1px solid #ccc;
+  padding: 0 10px;
+  cursor: pointer;
+} */
+
+/* ------------------------- 07 (table.ver)
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  margin: 50px auto;
+  width: 600px;
+  padding: 10px 20px;
+}
+li {
+  list-style: none;
+}
+#studentInfo {
+  margin-top: 40px;
+}
+#studentInfo li {
+  font-size: 1em;
+  line-height: 3;
+}
+#studentInfo label {
+  display: inline-block;
+  width: 50px;
+}
+#studentInfo input {
+  width: 450px;
+  padding: 5px;
+  outline: none;
+}
+button {
+  width: 450px;
+  margin: 20px 55px;
+  font-size: 1em;
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+}
+table {
+  width: 500px;
+  position: relative;
+  margin-left: 10px;
+}
+th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+td {
+  font-weight: 400;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+ */
+
+ /* ------------------------- 08 (setInterval을 사용한 시간차이 텍스트나타남/3초뒤 텍스트 사라짐) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+button {
+  background-color: #ddd;
+  padding: 1rem 3rem;
+  border: 1px solid #222;
+  border-radius: 5px;
+}
+#noti-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.noti {
+  background-color: #eee;
+  border-left: 3px solid #222;
+  padding: 1rem;
+  margin: 1rem;
+}

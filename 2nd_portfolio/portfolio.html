@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- jQuery -->
+  <script defer src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  <script defer src="https://code.jquery.com/jquery-migrate-1.4.1.js"></script>
+  <!-- slick CSS & JS -->
+  <link rel="stylesheet" href="/slick/slick-theme.css">
+  <link rel="stylesheet" href="/slick/slick.css">
+  <script defer src="/slick/slick.js"></script>
+  <script defer src="/slick/slick.min.js"></script>
+  <!-- BootStrap - icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- FontAwesome - icons -->
+  <script src="https://kit.fontawesome.com/79e902675f.js" crossorigin="anonymous"></script>
+
+  <!-- custom CSS & JS-->
+  <link rel="stylesheet" href="/css/portfolio.css">
+  <script defer src="/js/portfolio.js"></script>
+
+  <title>Document</title>
+</head>
+<body> 
+<div class="dashboard">
+  <div class="sidebar">
+    <div class="logo">
+      <h1>portfolio</h1>
+    </div>
+    <hr style="border: 1px solid var(--color-4);"/>
+    <div class="nav">
+      <ul>
+        <li class="navItem selected"><a href="home"><i class="bi bi-house"></i> Home</a></li>
+        <li class="navItem"><a href="about"><i class="bi bi-person-vcard"></i> About Me</a></li>
+        <li class="navItem"><a href="projects"><i class="bi bi-files"></i> Projects</a></li>
+        <li class="navItem"><a href="contact"><i class="bi bi-chat-dots"></i> Contact</a></li>
+      </ul>
+      <hr style="border: 1px solid var(--color-4);"/>
+      <!--#### Color-Theme ####-->
+      <div class="color-theme-box">
+        <div class="logo"><h3>Color Theme</h3></div>
+        <ul class="color-theme">
+          <li class="color-1">
+            <span id="color-1-1"></span>
+            <span id="color-1-2"></span>
+            <span id="color-1-3"></span>
+            <span id="color-1-4"></span>
+            <span id="color-1-5"></span>
+            <input type="radio" name="color-check" id="color-1-checked">
+          </li>
+          <li class="color-2">
+            <span id="color-2-1"></span>
+            <span id="color-2-2"></span>
+            <span id="color-2-3"></span>
+            <span id="color-2-4"></span>
+            <span id="color-2-5"></span>
+            <input type="radio" name="color-check" id="color-2-checked">
+          </li>
+          <li class="color-3">
+            <span id="color-3-1"></span>
+            <span id="color-3-2"></span>
+            <span id="color-3-3"></span>
+            <span id="color-3-4"></span>
+            <span id="color-3-5"></span>
+            <input type="radio" name="color-check" id="color-3-checked">
+          </li>
+          <li class="color-4">
+            <span id="color-4-1"></span>
+            <span id="color-4-2"></span>
+            <span id="color-4-3"></span>
+            <span id="color-4-4"></span>
+            <span id="color-4-5"></span>
+            <input type="radio" name="color-check" id="color-4-checked">
+          </li>
+          <li class="color-5">
+            <span id="color-5-1"></span>
+            <span id="color-5-2"></span>
+            <input type="radio" name="color-check" id="color-5-checked" checked>
+          </li>
+        </ul>
+      </div>
+      <hr style="border: 1px solid var(--color-4);"/>
+      <div class="video-theme-box">
+        <div class="logo"><h3>Video Theme</h3></div>
+        <ul class="video-theme">
+          <li><img src="/img/video1_cap.JPG" id="video1_cap" onclick="changeVideo1()"></li>
+          <li><img src="/img/video2_cap.JPG" id="video2_cap" onclick="changeVideo2()"></li>
+          <li><img src="/img/video3_cap.JPG" id="video3_cap" onclick="changeVideo3()"></li>
+          <li><img src="/img/video4_cap.JPG" id="video4_cap" onclick="changeVideo4()"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-content">
+    <div class="content active" id="home">
+      <div class="home-box">
+        <video id="video" muted autoplay loop style="width:100%;">
+          <source src="/img/home_video_1.mp4" type="video/mp4" id="src">
+        </video>
+        <div class="subject-box">
+          <div class="h1-box">
+            <h1>프론트엔드 개발자</h1>
+            <h1>오건희의</h1>
+            <h1>portfolio</h1>
+          </div>
+          <div class="p-box">
+            <p id="en">Oh Keon Hee's</p>
+            <p id="en">portfolio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="about">
+      <div class="about-items">
+        <div class="about-items-top">
+          <div class="about-item item1">
+            <div class="about-item-title">이름</div>
+            <div class="about-item-detail">오건희</div>
+          </div>
+          <div class="about-item item2">
+            <div class="about-item-title">생년월일</div>
+            <div class="about-item-detail">1998.12.22</div>
+          </div>
+          <div class="about-item item3">
+            <div class="about-item-title">주소지</div>
+            <div class="about-item-detail">고양시 일산동구</div>
+          </div>
+        </div>
+        <div class="about-items-bottom">
+          <div class="about-item item4">
+            <div class="about-item-title">연락처</div>
+            <div class="about-item-detail">010-8980-2726</div>
+          </div>
+          <div class="about-item item5">
+            <div class="about-item-title">이메일</div>
+            <div class="about-item-detail">98ogh@naver.com</div>
+          </div>
+          <div class="about-item item6">
+            <div class="about-item-title">전공</div>
+            <div class="about-item-detail">소프트웨어공학과</div>
+          </div>
+        </div>
+      </div>
+      <div class="btns">
+        <a href="https://github.com/adfdaf" target="_blank"><button id="gitbtn"><i class="bi bi-github"></i> GitHub</button></a>
+        <div class="resume">
+          <button id="resumeBtn"><i class="bi bi-search"></i> resume preview</button>
+          <a href="/오건희_이력서.pdf" download=""><button id="resumeDownload"><i class="bi bi-download"></i> resume download</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="projects">
+      <div class="dashboard-list">
+        <div class="listItem active" list-id="list1">
+          <h2>ChatBot 'Maeil'</h2>
+          <span>2022 April - 2022 Sep</span>
+          <div class="list_img">
+            <img src="/img/html.png">
+            <img src="/img/css3.png">
+            <img src="/img/js.png">
+            <img src="/img/java.png">
+          </div>
+        </div>
+        <div class="listItem" list-id="list2">
+          <h2>Mobile Web Page 'Today's MealKit'</h2>
+          <span>Friday, 17 Mar, 2023</span>
+          <div class="list_img">
+            <img src="/img/html.png">
+            <img src="/img/css3.png">
+            <img src="/img/js.png">
+          </div>
+        </div>
+        <div class="listItem" list-id="list3">
+          <h2>Web Page 'GMALAB HappyCoding'</h2>
+          <span>Tusday, 28 Mar, 2023</span>
+          <div class="list_img">
+            <img src="/img/html.png">
+            <img src="/img/css3.png">
+            <img src="/img/js.png">
+          </div>
+        </div>
+        <div class="listItem" list-id="list4">
+          <h2>Web Page < isotope Page > 'isotope'</h2>
+          <span>thursday, 30 Mar, 2023</span>
+          <div class="list_img">
+            <img src="/img/html.png">
+            <img src="/img/css3.png">
+            <img src="/img/js.png">
+          </div>
+        </div>
+        <div class="listItem" list-id="list5">
+          <h2>Responsive Web Page 'GMALAB Responsive'</h2>
+          <span>Thursday, 23 Mar, 2023</span>
+          <div class="list_img">
+            <img src="/img/html.png">
+            <img src="/img/css3.png">
+            <img src="/img/js.png">
+          </div>
+        </div>
+        <div class="listItem" list-id="list6">
+          <h2>Music Play Page</h2>
+          <span>Monday, 10 April, 2023</span>
+          <div class="list_img">
+            <img src="/img/html.png">
+            <img src="/img/css3.png">
+            <img src="/img/js.png">
+          </div>
+        </div>
+        <div class="listItem" list-id="list7">
+          <h2>My Profile</h2>
+          <span>Friday, 31 Mar, 2023</span>
+          <div class="list_img">
+            <img src="/img/html.png">
+            <img src="/img/css3.png">
+            <img src="/img/js.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="contact">
+      <div class="app-content">
+        <div class="projects-section">
+          <div class="chatbot__overview">
+            <ul class="chatlist">
+              <li class="bot__output bot__output--standard">안녕하세요, 프론트엔드 개발자 오건희입니다.😊</li>
+              <li class="bot__output bot__output--standard">저에게 궁금한 부분이 있나요? 오른쪽 버튼을 눌러주시면 바로 답변해 드려요!😘 <br/> (모바일은 하단 버튼을 눌러주세요😁)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="messages-section">
+          <div class="container">
+            <ul>
+              <li class="chat-list">
+                <ul class="chat-menu">
+                  <li><input type="button" id="button1" value="이름" onclick="buttonchat1()" ></li>
+                  <li><input type="button" id="button2" value="이메일" onclick="buttonchat2()" ></li>
+                  <li><input type="button" id="button3" value="깃허브" onclick="buttonchat3()" ></li>
+                  <li><input type="button" id="button4" value="이력서" onclick="buttonchat4()" ></li>
+                  <li><input type="button" id="button5" value="연락처" onclick="buttonchat5()" ></li>
+                  <li><input type="button" id="button6" value="전공" onclick="buttonchat6()" ></li>
+                  <li><input type="button" id="button7" value="생년월일" onclick="buttonchat7()" ></li>									
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-preview">
+    <div class="preview preview_active" id="list1">
+      <div class="preview_header">
+        <h2>Project</h2>
+        <h3>01<span>#</span></h3>
+        <button id="pro1Btn">project detail<i class="bi bi-arrow-right"></i></button>
+      </div>
+      <div class="preview_content">
+        <div class="preview_content_img">
+          <div><img src="/img/chatbot02.jpg" alt=""></div>
+          <div><img src="/img/chatbot01.jpg" alt=""></div>
+          <div><img src="/img/chatbot03.jpg" alt=""></div>
+          <div><img src="/img/chatbot04.jpg" alt=""></div>
+          <div><img src="/img/chatbot05.jpg" alt=""></div>
+        </div>
+        <div class="preview_content_text">
+          <h1>ChatBot 'Maeil'</h1>
+          <p>
+            1. 개요<br />
+            챗봇 “매일”은 사용자가 정보를 찾을 때 접근하기 쉽고 더 정확하고 신속한 정보를 
+            제공하기 위해 설계되었습니다.<br />
+
+            저희 챗봇 서비스는 1단계 챗봇 서비스로써 패턴 매칭과 키워드 및 연관어 추출을 통해
+            답변을 제공합니다.<br />
+
+            - 학습된 내용에 대한 질의응답<br />
+            - 사용자와 단순한 형태의 소통<br />
+            - 질문을 통한 답변 제공<br /><br />
+
+            2. 소개<br />
+            사용자는 서일대학교 관련 정보들을 학교 홈페이지나 블로그 등을 찾아볼 필요없이
+            챗봇 “매일”을 통해 정확한 정보들을 질문에 따른 답변으로 신속하게 전달합니다.<br />
+
+            FAQ ( 자주하는 질문 ) 기능을 통해 타 사용자는 어떤 정보를 필요로 하는지를 확인하는 
+            동시에 버튼 클릭 한 번으로 그에 따른 정보를 얻을 수 있습니다.<br /> 
+
+            사용자마다 각기 다른 질문방식에 따라 키워드 및 연관어를 추출해 그에 맞는 정보를
+            학습된 내용과 매칭해 답변을 제공합니다.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="preview" id="list2">
+      <div class="preview_header">
+        <h2>Project</h2>
+        <h3>02<span>#</span></h3>
+        <a href="http://dhrjsgml1222.dothome.co.kr/01.preloading.html" target="_blank">
+        <button>project detail<i class="bi bi-arrow-right"></i></button></a>
+      </div>
+      <div class="preview_content">
+        <div class="preview_content_img">
+          <div><img src="/img/01 - PreLoading.png"></div>
+          <div><img src="/img/02 - Login.png"></div>
+          <div><img src="/img/03 - Register.png"></div>
+          <div><img src="/img/04 - main.png"></div>
+          <div><img src="/img/05 - Product Detail(1).png"></div>
+          <div><img src="/img/06 - Product Detail(2).png"></div>
+          <div><img src="/img/07 - Category.png"></div>
+          <div><img src="/img/08 - Search.png"></div>
+          <div><img src="/img/09 - Mypage.png"></div>
+          <div><img src="/img/10 - Cart.png"></div>
+        </div>
+        <div class="preview_content_text">
+          <h1>Mobile Web Page 'Today's MealKit</h1>
+          <p>
+            1. 개요<br />
+            모바일 전용 페이지 'Today's MealKit는
+            모바일 쇼핑 페이지를 기반으로 제작한 프론트엔드 페이지입니다.<br />
+            - 피그마를 사용해 디자인 구성과 레이아웃 설정<br />
+            - 총 10개의 페이지 구성<br />
+            - 플러그인을 활용한 이미지 슬라이드와 JavaScript를 사용한 기능<br />
+            
+            <br />
+
+            2. 소개<br />
+            사용자는 하단의 메뉴바를 통해 각 페이지 이동이 용이하며 어느 페이지로 이동하던 같은 메뉴바를 고정시켜놨습니다.<br />
+
+            메인 페이지에선 이미지 슬라이더로 구성된 상품들의 정보를 슬라이드하며
+            삼품들을 볼 수 있으며 각각 다른 메뉴들을 통해 사용자가 원하는 카테고리를 선택할 수 있습니다.<br /> 
+
+            실제 마음에 드는 상품을 찜 <br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="preview" id="list3">
+      <div class="preview_header">
+        <h2>Project</h2>
+        <h3>03<span>#</span></h3>
+        <a href="http://dhrjsgml1222.dothome.co.kr/gmalab.html" target="_blank">
+        <button>project detail<i class="bi bi-arrow-right"></i></button></a>
+      </div>
+      <div class="preview_content">
+        <div class="preview_content_img">
+          <div><img src="/img/project3-1.jpg" alt=""></div>
+          <div><img src="/img/project3-2.jpg" alt=""></div>
+          <div><img src="/img/project3-3.jpg" alt=""></div>
+        </div>
+        <div class="preview_content_text">
+          <h1>Web Page 'GMALAB'</h1>
+          <p>
+            1. 개요<br />
+            챗봇 “매일”은 사용자가 정보를 찾을 때 접근하기 쉽고 더 정확하고 신속한 정보를 
+            제공하기 위해 설계되었습니다.<br />
+
+            저희 챗봇 서비스는 1단계 챗봇 서비스로써 패턴 매칭과 키워드 및 연관어 추출을 통해
+            답변을 제공합니다.<br />
+
+            - 학습된 내용에 대한 질의응답<br />
+            - 사용자와 단순한 형태의 소통<br />
+            - 질문을 통한 답변 제공<br /><br />
+
+            2. 소개<br />
+            사용자는 서일대학교 관련 정보들을 학교 홈페이지나 블로그 등을 찾아볼 필요없이
+            챗봇 “매일”을 통해 정확한 정보들을 질문에 따른 답변으로 신속하게 전달합니다.<br />
+
+            FAQ ( 자주하는 질문 ) 기능을 통해 타 사용자는 어떤 정보를 필요로 하는지를 확인하는 
+            동시에 버튼 클릭 한 번으로 그에 따른 정보를 얻을 수 있습니다.<br /> 
+
+            사용자마다 각기 다른 질문방식에 따라 키워드 및 연관어를 추출해 그에 맞는 정보를
+            학습된 내용과 매칭해 답변을 제공합니다.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="preview" id="list4">
+      <div class="preview_header">
+        <h2>Project</h2>
+        <h3>04<span>#</span></h3>
+        <a href="http://dhrjsgml1222.dothome.co.kr/isotope.html" target="_blank">
+        <button>project detail<i class="bi bi-arrow-right"></i></button></a>
+      </div>
+      <div class="preview_content">
+        <video id="video" muted autoplay loop style="width:100%;">
+          <source src="/img/project4.mp4" type="video/mp4" id="src">
+        </video>
+        <div class="preview_content_text">
+          <h1>isotope Page</h1>
+          <p>
+            1. 개요<br />
+            챗봇 “매일”은 사용자가 정보를 찾을 때 접근하기 쉽고 더 정확하고 신속한 정보를 
+            제공하기 위해 설계되었습니다.<br />
+
+            저희 챗봇 서비스는 1단계 챗봇 서비스로써 패턴 매칭과 키워드 및 연관어 추출을 통해
+            답변을 제공합니다.<br />
+
+            - 학습된 내용에 대한 질의응답<br />
+            - 사용자와 단순한 형태의 소통<br />
+            - 질문을 통한 답변 제공<br /><br />
+
+            2. 소개<br />
+            사용자는 서일대학교 관련 정보들을 학교 홈페이지나 블로그 등을 찾아볼 필요없이
+            챗봇 “매일”을 통해 정확한 정보들을 질문에 따른 답변으로 신속하게 전달합니다.<br />
+
+            FAQ ( 자주하는 질문 ) 기능을 통해 타 사용자는 어떤 정보를 필요로 하는지를 확인하는 
+            동시에 버튼 클릭 한 번으로 그에 따른 정보를 얻을 수 있습니다.<br /> 
+
+            사용자마다 각기 다른 질문방식에 따라 키워드 및 연관어를 추출해 그에 맞는 정보를
+            학습된 내용과 매칭해 답변을 제공합니다.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="preview" id="list5">
+      <div class="preview_header">
+        <h2>Project</h2>
+        <h3>05<span>#</span></h3>
+        <a href="http://dhrjsgml1222.dothome.co.kr/responsive.html" target="_blank">
+        <button>project detail<i class="bi bi-arrow-right"></i></button></a>
+      </div>
+      <div class="preview_content">
+        <div class="preview_content_img">
+          <div><img src="/img/project5-1.jpg" alt=""></div>
+          <div><img src="/img/project5-2.jpg" alt=""></div>
+          <div><img src="/img/project5-3.jpg" alt=""></div>
+          <div><img src="/img/project5-4.jpg" alt=""></div>
+          <div><img src="/img/project5-5.jpg" alt=""></div>
+          <div><img src="/img/project5-6.jpg" alt=""></div>
+          <div><img src="/img/project5-7.jpg" alt=""></div>
+        </div>
+        <div class="preview_content_text">
+          <h1>Responsive Web Page</h1>
+          <p>
+            1. 개요<br />
+            챗봇 “매일”은 사용자가 정보를 찾을 때 접근하기 쉽고 더 정확하고 신속한 정보를 
+            제공하기 위해 설계되었습니다.<br />
+
+            저희 챗봇 서비스는 1단계 챗봇 서비스로써 패턴 매칭과 키워드 및 연관어 추출을 통해
+            답변을 제공합니다.<br />
+
+            - 학습된 내용에 대한 질의응답<br />
+            - 사용자와 단순한 형태의 소통<br />
+            - 질문을 통한 답변 제공<br /><br />
+
+            2. 소개<br />
+            사용자는 서일대학교 관련 정보들을 학교 홈페이지나 블로그 등을 찾아볼 필요없이
+            챗봇 “매일”을 통해 정확한 정보들을 질문에 따른 답변으로 신속하게 전달합니다.<br />
+
+            FAQ ( 자주하는 질문 ) 기능을 통해 타 사용자는 어떤 정보를 필요로 하는지를 확인하는 
+            동시에 버튼 클릭 한 번으로 그에 따른 정보를 얻을 수 있습니다.<br /> 
+
+            사용자마다 각기 다른 질문방식에 따라 키워드 및 연관어를 추출해 그에 맞는 정보를
+            학습된 내용과 매칭해 답변을 제공합니다.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="preview" id="list6">
+      <div class="preview_header">
+        <h2>Project</h2>
+        <h3>06<span>#</span></h3>
+        <a href="http://dhrjsgml1222.dothome.co.kr/musicplay.html" target="_blank">
+        <button>project detail<i class="bi bi-arrow-right"></i></button></a>
+      </div>
+      <div class="preview_content">
+        <video id="video" muted autoplay loop style="width:100%;">
+          <source src="/img/project6.mp4" type="video/mp4" id="src">
+        </video>
+        <div class="preview_content_text">
+          <h1>Music Play Page</h1>
+          <p>
+            1. 개요<br />
+            챗봇 “매일”은 사용자가 정보를 찾을 때 접근하기 쉽고 더 정확하고 신속한 정보를 
+            제공하기 위해 설계되었습니다.<br />
+
+            저희 챗봇 서비스는 1단계 챗봇 서비스로써 패턴 매칭과 키워드 및 연관어 추출을 통해
+            답변을 제공합니다.<br />
+
+            - 학습된 내용에 대한 질의응답<br />
+            - 사용자와 단순한 형태의 소통<br />
+            - 질문을 통한 답변 제공<br /><br />
+
+            2. 소개<br />
+            사용자는 서일대학교 관련 정보들을 학교 홈페이지나 블로그 등을 찾아볼 필요없이
+            챗봇 “매일”을 통해 정확한 정보들을 질문에 따른 답변으로 신속하게 전달합니다.<br />
+
+            FAQ ( 자주하는 질문 ) 기능을 통해 타 사용자는 어떤 정보를 필요로 하는지를 확인하는 
+            동시에 버튼 클릭 한 번으로 그에 따른 정보를 얻을 수 있습니다.<br /> 
+
+            사용자마다 각기 다른 질문방식에 따라 키워드 및 연관어를 추출해 그에 맞는 정보를
+            학습된 내용과 매칭해 답변을 제공합니다.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="preview" id="list7">
+      <div class="preview_header">
+        <h2>Project</h2>
+        <h3>07<span>#</span></h3>
+        <a href="http://dhrjsgml1222.dothome.co.kr/profile.html" target="_blank">
+        <button>project detail<i class="bi bi-arrow-right"></i></button></a>
+      </div>
+      <div class="preview_content">
+        <div class="preview_content_img">
+          <div><img src="/img/project7-1.jpg" alt=""></div>
+          <div><img src="/img/project7-2.jpg" alt=""></div>
+          <div><img src="/img/project7-3.jpg" alt=""></div>
+          <div><img src="/img/project7-4.jpg" alt=""></div>
+        </div>
+        <div class="preview_content_text">
+          <h1>My Profile Page</h1>
+          <p>
+            1. 개요<br />
+            챗봇 “매일”은 사용자가 정보를 찾을 때 접근하기 쉽고 더 정확하고 신속한 정보를 
+            제공하기 위해 설계되었습니다.<br />
+
+            저희 챗봇 서비스는 1단계 챗봇 서비스로써 패턴 매칭과 키워드 및 연관어 추출을 통해
+            답변을 제공합니다.<br />
+
+            - 학습된 내용에 대한 질의응답<br />
+            - 사용자와 단순한 형태의 소통<br />
+            - 질문을 통한 답변 제공<br /><br />
+
+            2. 소개<br />
+            사용자는 서일대학교 관련 정보들을 학교 홈페이지나 블로그 등을 찾아볼 필요없이
+            챗봇 “매일”을 통해 정확한 정보들을 질문에 따른 답변으로 신속하게 전달합니다.<br />
+
+            FAQ ( 자주하는 질문 ) 기능을 통해 타 사용자는 어떤 정보를 필요로 하는지를 확인하는 
+            동시에 버튼 클릭 한 번으로 그에 따른 정보를 얻을 수 있습니다.<br /> 
+
+            사용자마다 각기 다른 질문방식에 따라 키워드 및 연관어를 추출해 그에 맞는 정보를
+            학습된 내용과 매칭해 답변을 제공합니다.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-container">
+  <div class="modal">
+    <div class="modal-btns">
+      <a href="/오건희_이력서.pdf" download=""><button id="resumeDownload"><i class="bi bi-download"></i> download</button></a>
+      <button class="close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="resumeImg">
+      <img src="/img/resume.png" alt="" id="resumeImg">
+    </div>
+  </div>
+</div>
+<div class="pro1_modal-container">
+  <div class="modal">
+    <div class="modal-btns">
+      <a href="/챗봇 기능 설명 매뉴얼.hwp" download=""><button id="resumeDownload"><i class="bi bi-download"></i> 기능설명 매뉴얼 download</button></a>
+      <button class="pro1_close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="modal project-detail">
+      <div class="hiring-main">
+        <div><img src="/img/project-main-01-01.jpg" alt=""></div>
+        <div class="hiring-heading">
+          <h1>ChatBot 'Maeil'</h1>
+        </div>
+      </div>
+      <article class="hiring-info">
+        <div class="center-parent">
+          <div class="center-child">
+            <h2>ChatBot 'Maeil'</h2>
+            <p>챗봇 '매일'은 졸업 작품 팀프로젝트로써 5인으로 구성된 팀원이 만든 프로젝트입니다.<br>
+              저는 프론트엔드와 로그인,회원가입,게시판의 백엔드를 담당해 작업했습니다.<br>
+              챗봇을 아이템으로 선정한 이유는 저희 학교의 정보를 보기위한 수단이 부실했기 때문입니다.<br>
+              따라서 챗봇을 만들어 학생들의 궁금증을 질문하나로 풀어주기 위해 제작했습니다.
+            </p>
+          </div>
+        </div>
+        <div class="photo project-info" id="en">
+          <ul>
+            <li><b>Area</b> : 서일대학교</li>
+          </ul>
+          <ul>
+            <li><b>Completed Date</b> : September 2022</li>
+          </ul>
+          <ul>
+            <li><b>Working Day</b> : 4 Month</li>
+          </ul>
+          <ul>
+            <li><b>Member</b> : 5</li>
+          </ul>
+        </div>
+      </article>
+      <article class="hiring-info">
+        <div class="photo">
+          <img src="/img/develope.JPG" alt="">
+        </div>
+        <div class="center-parent">
+          <div class="center-child">
+            <h2>+ 개발환경</h2>
+            <p>개발도구로 Eclipse를 사용하여 톰캣 서버를 설치해 개발했습니다.<br>언어로 JAVA를 사용했으며 사용자들의 DB는 Maria DB를 통해 관리했습니다.</p>
+          </div>
+        </div>
+      </article>
+      <article class="hiring-info">
+        <div class="center-parent">
+          <div class="center-child">
+            <h2>+ 시스템 구성 및 다이어그램</h2>
+            <p>‘Maeil’은 로그인을 하지 않아도 이용할 수 있는 챗봇, FAQ 기능과 로그인을 해야 이용할 수 있는 게시판, 마이페이지 등의 기능으로 이루어져 있습니다.<br>
+              메인 화면에서 바로 챗봇과 FAQ를 이용할 수 있고 로그인 후 게시판기능, 마이페이지에서 회원정보 수정, 게시글 조회 등의 기능을 이용할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="/img/table.JPG" alt="">
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+<div class="figma-modal-container">
+  <div class="modal">
+    <div class="modal-btns">
+      <button class="figma-close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="figmaImg">
+      <img src="/img/figma_root.jpg" alt="" id="figmaRoot">
+      <img src="/img/figma.png" alt="" id="figmaImg">
+    </div>
+  </div>
+</div>
+<a href="/mobile/mobile-view.html" class="mobile_ver_btn"><i class="bi bi-phone"></i><p> Mobile .Ver</p></a>
+<button id="figmaBtn"><i class="fa-brands fa-figma"></i> figma Image <i class="bi bi-arrow-right"></i></button>
+<div class="mobile_nav">
+  <div>
+    <ul>
+      <li class="navItem selected"><a href="home"><i class="bi bi-house"></i> Home</a></li>
+      <li class="navItem"><a href="about"><i class="bi bi-person-vcard"></i> About Me</a></li>
+      <li class="navItem"><a href="projects"><i class="bi bi-files"></i> Projects</a></li>
+      <li class="navItem"><a href="contact"><i class="bi bi-chat-dots"></i> Contact</a></li>
+    </ul>
+  </div>
+  <div class="mobile-theme">
+    <div class="color-dropdown">
+      <button class="color-dropbtn">Color-Theme</button>
+      <div class="color-dropdown-content">
+        <button><input type="radio" name="color-check" id="color-1-checked">color-1</button>
+        <button><input type="radio" name="color-check" id="color-2-checked">color-2</button>
+        <button><input type="radio" name="color-check" id="color-3-checked">color-3</button>
+        <button><input type="radio" name="color-check" id="color-4-checked">color-4</button>
+        <button><input type="radio" name="color-check" id="color-5-checked">color-5</button>
+      </div>
+    </div>
+    <div class="video-dropdown">
+      <button class="video-dropbtn">Video-Theme</button>
+      <div class="video-dropdown-content">
+        <img src="/img/video1_cap.JPG" id="video1_cap" onclick="changeVideo1()">
+        <img src="/img/video2_cap.JPG" id="video2_cap" onclick="changeVideo2()">
+        <img src="/img/video3_cap.JPG" id="video3_cap" onclick="changeVideo3()">
+        <img src="/img/video4_cap.JPG" id="video4_cap" onclick="changeVideo4()">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

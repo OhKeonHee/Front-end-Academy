@@ -1,0 +1,77 @@
+/* ############### TodoList (storage를 활용해 새로고침해도 데이터는 저장되았는 todolist만들기) ############### */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+header {
+  font-size: 1.5rem;
+}
+header, form {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#todo-list {
+  list-style: none;
+  width: 30%;
+}
+.todo {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo .todo-content {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px dotted #ccc;
+}
+.todo button {
+  padding: 0.5rem;
+  margin-right: 0.2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  color: #d8d8d8;
+  opacity: 0.7;
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#result {
+  margin: 20px;
+  padding: 20px;
+}
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}

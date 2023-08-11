@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 30px;
+}
+form {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+}
+input, button {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+input {
+  width: 100%;
+  padding: 0 15px;
+  outline: none;
+}
+input:focus::placeholder {
+  opacity: 0;
+}
+button {
+  width: 100px;
+  background-color: #3498bb;
+  color: #fff;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #2980b9;
+}
+ul, li {
+  list-style: lower-greek;
+  padding: 10px;
+  margin: 10px 10px;
+}
+li {
+  border-bottom: 1px dotted lightskyblue;
+  margin-bottom: 7px;
+  padding-bottom: 7px;
+  font-weight: 500;
+}

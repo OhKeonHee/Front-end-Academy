@@ -1,0 +1,83 @@
+/* font-style */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* bootstrap-icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/* color-theme */
+.theme1:root {
+  --color-1 : #585046;
+  --color-2 : #8C8274;
+  --color-3 : #D9C6B0;
+  --color-4 : #F2E2CE;
+  --color-5 : #0D0D0D;
+  --color-6 : rgba(88, 80, 70, 0.6);
+  --color-7 : black;
+  --color-8 : white;
+}
+.theme2:root {
+  --color-1 : #025e73;
+  --color-2 : #026873;
+  --color-3 : #03A688;
+  --color-4 : #F2668B;
+  --color-5 : #011F26;
+  --color-6 : rgba(2, 94, 115, 0.6);
+  --color-7 : black;
+  --color-8 : #ccc;
+}
+.theme3:root {
+  --color-1 : #f27166;
+  --color-2 : #D9998B;
+  --color-3 : #B8B8BF;
+  --color-4 : #2E3D59;
+  --color-5 : #010A26;
+  --color-6 : rgba(242, 113, 102, 0.6);
+  --color-7 : #2E3D59;
+  --color-8 : #222;
+}
+.theme4:root {
+  --color-1 : #5d91a6;
+  --color-2 : #D98E04;
+  --color-3 : #D9A404;
+  --color-4 : #8C2920;
+  --color-5 : #8C2920;
+  --color-6 : rgba(93, 145, 166, 0.6);
+  --color-7 : #8C2920;
+  --color-8 : #222;
+}
+.theme5:root {
+  --color-1 : #ccc;
+  --color-2 : #ccc;
+  --color-3 : #ccc;
+  --color-4 : #000;
+  --color-5 : #000;
+  --color-6 : rgba(0,0,0,0.6);
+  --color-7 : #000;
+  --color-8 : #000;
+}
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'GmarketSansMedium';
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+#en {
+  font-family: 'Ubuntu', sans-serif;
+}

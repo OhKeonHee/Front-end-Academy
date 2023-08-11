@@ -1,0 +1,33 @@
+============ ** 리액트 쿼리
+npm i --force react-query
+> 리덕스 대체자!! (* 상태관리를 보다 효율적)
+
+https://coinpaprika.com/ko/ -> 코인파프리카
+https://api.coinpaprika.com/v1/coins -> 코인파프리카 (가상화폐 api)
+
+- 0811
+
+useState(): 웹 페이지가 새롭게 새로고침이 될 때마다 값을 웹브라우저에 출력시키고 싶을 때 사용하는 리액트 훅
+
+useEffect(): 특정 시기에 코드를 실행시키기 위해 사용하는 함수
+  > 특정 시기를 정의하게 만드는 요소: 의존성 배열
+  ex) useEffect(() => {
+
+      }, [] -> 의존성 배열)
+
+  > useEffect(() => { 
+      (async () => {
+        const response = await fetch("https://api.coinpaprika.com/v1/coins");
+        const json = await response.json();
+        console.log(json);
+      })();
+
+      // 고차함수의 비동기처리를 위한 async
+      // 외부데이터 가져올 때 많이 사용하는 fetch함수
+      // json()을 쓰기위해선 데이터가 먼저 들어와야함으로 response에 await를 써 먼저 실행되게함
+      // 고차함수의 익명함수(ex: () => )는 async를 ()안에 넣고 뒤에 ()로 실행시켜줘야함
+      // async function() class 같은 형식은 쓸 필요없음 -> 익명함수가 아니기때문
+    }, []);
+
+** http://localhost:3000/btc-bitcoin 처럼
+  Link 컴포넌트를 활용해서 상단 파라미터를 거치지 않고서도 state라는 속성을 이용해 데이터를 전달할 수 있는 방법!!

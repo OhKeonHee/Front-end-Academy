@@ -1,0 +1,45 @@
+/* Font */
+@font-face {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PilseungGothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/PilseungGothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+:root {
+  --top-yellow: #EAF205;
+  --mid-yellow: #F2E205;
+  --bot-yellow: #BFB304;
+  --dark-snow: #F2F2F2;
+  --black: #0D0D0D;
+  --deep-blue: #222640;
+  --blue: #022859;
+}
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Default CSS */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 15px;
+  margin: 0;
+  height: 100vh;
+  background-color: var(--dark-snow);
+}

@@ -1,0 +1,6 @@
+@import "/138/base_photo.css";
+
+body {
+  background-size: cover;
+  background: url("/138/images/bg_c.jpg") center;
+}

@@ -1,0 +1,515 @@
+/* ########## flex 연습 01 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.container {
+  display: flex;
+}
+nav {
+  background-color: orange;
+  flex: 1;
+}
+main {
+  flex: 5;
+}
+header {
+  background-color: yellowgreen;
+  height: 6.25rem;
+}
+.inner {
+  display: flex;
+}
+.inner section {
+  flex: 4;
+}
+.inner section article {
+  background-color: blueviolet;
+  height: calc(100vh - 200px);
+}
+.inner aside {
+  flex: 1;
+  background-color: aqua;
+}
+footer {
+  background-color: tomato;
+  height: 6.25rem;
+} */
+
+
+/* ########## flex 연습 02 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: orange;
+  height: 12.5rem;
+}
+main {
+  display: flex;
+  height: calc(100vh - 400px);
+}
+nav {
+  flex: 1;
+  background-color: aquamarine;
+}
+article {
+  flex: 2;
+  background-color: chartreuse;
+}
+aside {
+  flex: 1;
+  background-color: tomato;
+}
+footer {
+  background-color: blue;
+  height: 12.5rem;
+} */
+
+
+/* ########### flex 연습 03 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green {
+  width: 80%;
+  height: 50%;
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.blue {
+  width: 80%;
+  height: 80%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.red {
+  background-color: red;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.gray {
+  background-color: gray;
+  width: 30%;
+  height: 50%;
+} */
+
+/* ########### flex 연습 04 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.wrap {
+  border: 5px solid red;
+  height: 20%;
+  flex: 1;
+  display: flex;
+}
+.yellow {
+  background-color: yellow;
+  flex: 1;
+  height: 100%;
+}
+.green {
+  background-color: green;
+  flex: 1;
+  height: 100%;
+} */
+
+/* ########### flex 연습 05 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: yellow;
+  height: 5%;
+}
+.banner {
+  background-color: yellowgreen;
+  height: 5%;
+}
+main {
+  display: flex;
+  height: 100%;
+}
+nav {
+  flex: 1;
+  background-color: pink;
+}
+article {
+  flex: 5;
+  background-color: skyblue;
+}
+footer {
+  background-color: black;
+  height: 10%;
+} */
+
+/* ########### flex 연습 06 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.content {
+  background-color: yellow;
+  flex: 4;
+  padding: 20px;
+}
+aside {
+  flex: 3;
+}
+.side1 {
+  background-color: skyblue;
+  height: 50%;
+  padding: 10% 5%;
+}
+.side2 {
+  background-color: pink;
+  height: 50%;
+  padding: 10% 5%;
+}
+
+@media screen and (max-width: 768px){
+  .container {
+    flex-direction: column;
+  }
+  aside {
+    display: flex;
+    flex-direction: row;
+  }
+} */
+
+/* ########### flex 연습 07 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header {
+  background-color: red;
+  border: 1px solid black;
+  text-align: center;
+  height: 4.25rem;
+}
+main {
+  display: flex;
+  height: calc(100vh - 600px);
+  text-align: center;
+}
+nav {
+  flex: 1;
+  background-color: yellow;
+}
+article {
+  flex: 4;
+  background-color: gray;
+}
+aside {
+  flex: 1;
+  background-color: green;
+}
+footer {
+  background-color: aqua;
+  height: 4.25rem;
+}
+
+@media screen and (max-width: 768px){
+  main {
+    flex-direction: column;
+    height: 20%;
+  }
+  article {
+    order: 1;
+  }
+  nav {
+    order: 2;
+  }
+  aside {
+    order: 2;
+  }
+} */
+
+/* ########### flex 연습 08 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 5%;
+}
+.wrap {
+  height: 50%;
+  flex: 1;
+  border: 1px solid crimson;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px){
+  .container {
+    flex-direction: column;
+    gap: 2%;
+  }
+  .wrap {
+    width: 50%;
+    gap: 5%;
+    padding: 20px 10px;
+  }
+} */
+
+/* Nike 헤더 flex */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.logo {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.gnb {
+  flex: 4;
+  justify-content: center;
+  align-items: center;
+}
+.gnb ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+header input {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px){
+  header {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .gnb ul {
+    gap: 1rem;
+  }
+  header input {
+    border: none;
+    text-align: center;
+  }
+} */
+
+/* ########### flex 연습 10 */
+/* .parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.child {
+  background-color: greenyellow;
+  height: 12.5rem;
+  width: 18.75rem;
+  margin: 0.3125rem;
+  text-align: center;
+  line-height: 12.5rem;
+  font-size: 3rem;
+  flex: 1;
+  flex-basis: 18.75rem;
+} */
+
+/* ########### flex 연습 11 */
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-weight: bold;
+}
+header {
+  background-color: yellow;
+  height: 6.75rem;
+  line-height: 6.75rem;
+  padding: 0 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.banner {
+  background-color: yellowgreen;
+  height: 6.75rem;
+  line-height: 6.75rem;
+  padding: 0 20px;
+  font-size: 2rem;
+}
+article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+nav {
+  background-color: pink;
+  padding: 20px;
+  font-size: 1.5rem;
+  height: 100%;
+  flex-basis: 20rem;
+}
+main {
+  flex: 3;
+  background-color: skyblue;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+p {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 768px){
+  article {
+    flex-direction: column;
+  }
+} */
+
+/* ########### flex 연습 12 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  gap: 1rem;
+}
+.content {
+  background-color: #ddd;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.img img {
+  width: 10rem;
+}
+.txt {
+  padding: 1rem;
+}
+.title {
+  font-size: 1rem;
+}
+.txt p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px){
+  .container {
+    flex-direction: column;
+  }
+}

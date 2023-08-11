@@ -1,0 +1,21 @@
+@import "reset";
+@import "mixin";
+@import "map-get";
+
+// ############### Contents
+body {
+  font-family: map-get($font-family, kor);
+  color: map-get($font-color, primary);
+  font-size: map-get($font-size, base);
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: map-get($bg-color, primary);
+}
+.portfolio {
+  height: 100vh;
+  background: url('/img/background.png') no-repeat top center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}

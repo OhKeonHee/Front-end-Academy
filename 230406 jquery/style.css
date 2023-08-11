@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.bx-wrapper {
+  width: 80%;
+  margin: 20px auto;
+  padding: 30px;
+}
+header {
+  background-color: #FFB200;
+  width: 100%;
+  height: 6vh;
+}
+header img {
+  margin: 20px;
+  margin-left: 50px;
+}
+.ui-dialog-titlebar {
+  background-color: #FFB200;
+}
+.ui-button-icon ui-icon ui-icon-closethick {
+  color: black;
+}
+.items {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.item1 {
+  width: 300px; height: 100%;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+}
+.items img {
+  width: 100%;
+}
+.item1 p {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+.price {
+  text-align: center;
+}
+.price s {
+  display: block;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+.event {
+  display: flex;
+  justify-content: center;
+}
+.event p {
+  background-color: #FFB200;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: 300;
+  margin: 5px;
+}
+.container {
+  display: none;
+}
+button.close {
+  position: absolute;
+  background-color: transparent;
+  top: 90px;
+  right: 20px;
+  width: 40px;
+  color: black;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.modal p {
+  margin-top: 50px;
+}
+.dialog-item {
+  width: 40%; height: 200px;
+  border: 2px solid red;
+  position: relative;
+}
+.dialog-item img {
+  width: 100%;
+}
+.dialog-item-detail {
+  border: 2px solid red;
+  width: inherit;
+  text-align: center;
+  font-size: 12px;
+  margin: 5px;
+}

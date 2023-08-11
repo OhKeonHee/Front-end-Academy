@@ -1,0 +1,34 @@
+@import url('/182/style1.css');
+
+.rect {
+  display: block;
+  position: absolute;
+  background-size: contain;
+  top: 150px;
+  
+  width: 100px;
+  height: 100px;
+  background: url('/182/img/loading.svg');
+}
+
+.rect.state-show {
+  animation: infinite 1s rotate linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.centering {
+  position: relative;
+}
+
+.ui {
+  position: absolute;
+  bottom: 100px;
+}

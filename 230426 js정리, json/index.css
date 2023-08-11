@@ -1,0 +1,59 @@
+/* ###################### 신청과목의 최종신청과목 중복 없이 출력하기 ########################### */
+/* #container {
+  width: 400px;
+  margin: 20px auto;
+}
+hr {
+  width: 100%;
+  border: 1px dotted #222;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1rem;
+  line-height: 2;
+} */
+
+/* ###################### 버튼 클릭하면 종점까지 다음역 표시하기 ########################### */
+/* body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  width: 150px;
+  padding: 10px 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+#result {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+} */
+
+
+/* ###################### 로또번호 생성기 ########################### */
+/* body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+button {
+  width: 150px;
+  padding: 10px 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+#result {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  color: red;
+} */

@@ -1,0 +1,10 @@
+/* 초기값 */
+* {
+  margin: 0; padding: 0;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.test {
+  text-align: center;
+}

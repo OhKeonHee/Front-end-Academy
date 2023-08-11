@@ -1,0 +1,28 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.face_gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+}
+.face_gallery img {
+  width: 100%;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-areas: 
+    "img img img img img"
+    "main main main main main"
+    "img img img img img";
+}

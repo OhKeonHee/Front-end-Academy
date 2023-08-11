@@ -1,0 +1,64 @@
+*노드 특징
+- 싱글 스레드: 동기적 프로그래밍 언어
+- 논 블로킹 (Non-Blocking) 시스템 : 만약 먼저 도착한 실행문의 작업시간이 오래 걸릴경우, 뒤늦게 도착한 실행문이 먼저 처리되었을 시, 해당 결과를 먼저 리턴 
+- npm i afdafdsfds
+- 내부 (*기본적으로 노드가 제공하는 라이브러리) 및 외부 (*개발자들이 서로 공유하는 라이브러리) 모듈 (*패키지) 제공!! 
+
+*노드 JS 실습: 레플 (*REPL => Read, Evaluate, Print, Loop) == 터미널에서 입력하고 출력해보기
+1. VSCode 터미널에서 +모양을 클릭한 후 Command Prompt를 클릭
+2. 터미널에 node 입력
+3. const str = "Hello World, Hello Node!" 입력 -> undefined
+4. str 입력 -> 'Hello World, Hello Node!'
+===
+레플 2.
+Helloworld.js 파일 작성
+터미널에서 node Helloworld.js 입력하면 결과값 출력됨
+
+-----------------------------------------------
+
+*노드JS 특징: 자바스크립트 코드를 모듈로 만들 수 있음
+- 모듈 : 특정한 기능을 하는 함수 및 변수들의 집합
+- 반복적으로 사용되는 기능을 모듈로 만들어 놓음으로써 여러 복수의 프로그램에서 재사용이 가능
+
+## *npm:
+다른 사람들이 만들어 놓은 소스 코드를 모아둔 저장소
+타인의 소스코드를 활용해 프로그래밍 개발
+*package.json
+1) name: 패키지 이름
+2) version: 노드 버전은 왜 항상 3개?
+```
+"version":"1.0.0"
+```
+=> major: 하위 버전과 호환되지 않는 큰 수정사항이 생겼을 때 숫자 업데이트
+=> minor: 하위 버전과 호환되는 소소한 수정사항이 생겼을 때 숫자 업데이트
+=> patch: 패키지 내 기능적인 버그 수정(*디버깅) 시 숫자 업데이트
+3) description: 현재 작업하고 있는 노드 패키지의 설명문안
+4) main: 해당 노드 패키지가 설치되어 있는 루트 폴더의 디폴트 파일
+5) type: CJS / ESM(*대부분)
+6) scripts: 어떤 반복인 실행문을 단축해서 실행시킬 수 있는 키워드 저장하는 공간
+7) author: 해당 노드 패키지를 제작하는 제작자의 닉네임
+
+npm install / i (설치할 프로그램명)
+
+> npm i express
+> npm i body-parser
+> npm i cookie-parser
+
+기본적으로 npm을 활용해서 외부 라이브러리 모듈을 설치하게 되면, 해당 모듈도 npm에 속한 하나의 패키지이기 때문에,
+해당 패키지가 의존하고 있는 또다른 모듈 역시 우리 프로젝트 안에 같이 설치가 된다.
+
+npm i -D [노드패키지 모듈]
+npm i -D nodemon
+npm i -g: 명령어 형식으로 사용할 수 있는 모듈타입
+(* 최근에는 -g 형식의 설치 방식을 비공식적으로 기피하는 경우가 많음)
+npm i -g rimraf: 명령어로 어떤 폴더 트리를 삭제할 수 있는 명령어
+ex ) rimraf node_modules -> node_modules 삭제됨
+npm i -D rimraf
+
+npx rimraf node_modules
+npx: node package execute: 해당 노드 패키지를 전역 요소에 실행해라!
+
+npm adduser: npm login 하기
+
+nodeJS를 활용해서 서버를 구현했을 때, 장점 중 하나
+- 서버 하나에 여러개의 포트를 연결해서 운영할 수 있음

@@ -1,0 +1,95 @@
+/* 초기값 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Gothic A1', sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 본문스타일 */
+body {
+  background-color: antiquewhite;
+  height: 100%;
+}
+#container {
+  width: 900px;
+  position: relative;
+  left: 50%;
+  margin-left: -450px;
+
+}
+
+/* 사이드 스타일 */
+aside {
+  float: left;
+  width: 300px; height: 100vh;
+  padding: 20px 50px;
+  background-color: rgba(220, 20, 60, 0.479);
+}
+aside > #namecard > h1 {
+  margin-top: 20px;
+}
+#detail {
+  margin-top: 100px;
+}
+#sns {
+  margin-top: 50px;
+}
+#sns > ul > li {
+  display: inline-block;
+  width: 80px;
+  padding-left: 10px;
+}
+aside p {
+  margin-top: 10px;
+}
+
+/* 본문 */
+#main {
+  float: left;
+  width: 600px; height: 100vh;
+  background-color: skyblue;
+  padding: 20px;
+}
+#main > section {
+  width: 500px;
+  margin: 20px 10px;
+  padding: 20px;
+  border-bottom: 1px dotted black;
+}
+section > p, section > ul {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+section .text {
+  padding-left: 10px;
+  margin: 10px;
+}
+section .text > li {
+  margin: 5px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+table {
+  width: 400px;
+  height: 100px;
+  margin: 10px auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+caption {
+  margin: 10px;
+}
+thead {
+  background-color: antiquewhite;
+}

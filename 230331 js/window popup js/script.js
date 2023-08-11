@@ -1,0 +1,1 @@
+window.open("/index_1.html", "popup", "width=300, height=500, left=50, top=10");

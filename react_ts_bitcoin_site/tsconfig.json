@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "preserve", // -> 필수 !! (js에서 쓰던거 ts에서도 쓰겠단 뜻임)
+    "outDir": "dist",
+    "strict": true,
+    "moduleDetection": "force",
+    "moduleResolution": "Node", // -> 이게 없으면 npm으로 설치한 외부패키지들에 못찾는 오류가 뜸
+    "noImplicitAny": true, 
+    // 타입지정 안하면 any타입으로 붙힌다를 true로 하면 매개변수(props)에 타입지정 안하면 에러뜸
+    "allowJs": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "allowSyntheticDefaultImports": true,
+  },
+  "ts-node": {
+    "esm": true // -> package.json 에서 "dependencies" 위에 "type": "module"을 추가해줘야함
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,35 @@
+body {
+  width: 500px;
+  margin: 10px auto;
+}
+
+fieldset {
+  width: 250px;
+  background-color: antiquewhite;
+}
+
+#wrap {
+  width: 240px;
+  text-align: center;
+}
+
+legend {
+  text-align: center;
+}
+
+.title {
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+#btn {
+  width: 250px;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+
+button {
+  margin-left: 10px;
+}

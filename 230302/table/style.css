@@ -1,0 +1,25 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 600px;
+  height: 300px;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+table > tbody > tr > td {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+table > thead > tr > th {
+  padding: 10px;
+  color: antiquewhite;
+}
+
+table > tbody > tr > th {
+  padding: 14px;
+  color:antiquewhite
+}

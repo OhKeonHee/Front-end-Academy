@@ -1,0 +1,198 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* main */
+html {
+  background: url('./img/Background.png');
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: url('./img/Center_Background.png');
+  width: 960px; height: 550px;
+  margin-left: -480px;
+  margin-top: -275px;
+  position: absolute;
+  top: 50%; left: 50%;
+}
+
+/* title */
+#title { /*타이틀 h1이 올라오는 공간 박스 그래서 바디값보다 올라가기 위해 top에서 -함*/
+  position: absolute;
+  left: 0; top: -48px;
+  width: 240px; height: 48px;
+  overflow: hidden;
+}
+#title h1 {  /*실제 h1글씨는 body에 숨겨져 있어야함 그래서 top에 수치 줌*/
+  position: absolute;
+  left: 0; top: 48px;
+  width: 240px; height: 48px;
+  background: url('./img/Title_Images.png');
+  text-indent: -9999px;
+  transition-duration: 1s;
+}
+#title h1.active {
+  top: 0;
+}
+#title h1:nth-child(1) {
+  background-position: 0 0;
+}
+#title h1:nth-child(2) {
+  background-position: 0 -48px;
+}
+#title h1:nth-child(3) {
+  background-position: 0 -96px;
+}
+
+/* navigation */
+#main_nav ul {
+  overflow: hidden;
+}
+#main_nav li {
+  float: left;
+}
+#main_nav a {
+  display: block;
+  width: 240px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: url('./img/Navigation_Button.png');
+  text-indent: -99999px;
+}
+
+/* nav sprite img */
+#main_nav li:nth-child(1) > a {
+  background-position: 0 0;
+}
+#main_nav li:nth-child(2) > a {
+  background-position: 0 -100px;
+}
+#main_nav li:nth-child(3) > a {
+  background-position: 0 -200px;
+}
+#main_nav li:nth-child(4) > a {
+  background-position: 0 -300px;
+}
+
+/* nav sprite img :hover */
+#main_nav li:nth-child(1) > a:hover {
+  background-position: 0 -50px;
+}
+#main_nav li:nth-child(2) > a:hover {
+  background-position: 0 -150px;
+}
+#main_nav li:nth-child(3) > a:hover {
+  background-position: 0 -250px;
+}
+#main_nav li:nth-child(4) > a:hover {
+  background-position: 0 -350px;
+}
+
+/* container */
+#container {
+  position: relative;
+  width: 100%;
+  padding: 0 40px; 
+  margin-left: -40px;
+  height: 500px;
+  overflow: hidden;
+}
+div[data-name] {
+  position: absolute;
+  left: 40px; top: 550px;
+  width: 960px; height: 500px;
+  transition-duration: 2s;
+}
+div[data-name].active {
+  top: 0; /*active로 선택받은 애는 올라옴*/
+}
+
+/* main img */
+div[data-name=main] img {
+  position: absolute;
+  left: -50px; bottom: 0;
+}
+div[data-name=information] img {
+  position: absolute;
+  left: 20px; top: 20px;
+}
+div[data-name=information] div { /*information 내부의 div 즉, class=description*/
+  position: absolute;
+  left: 450px; top: 30px;
+  width: 480px;
+}
+div[data-name=multimedia] {
+  padding: 10px;
+}
+
+/* character button*/
+div[data-name=character] > a { /*left, right button*/
+  display: block;
+  width: 40px; height: 40px;
+  text-indent: -9999px;
+  background: url('./img/Arrow_Images.png');
+}
+div[data-name=character] > a:nth-child(1) {
+  background-position: 0 0;
+  position: absolute;
+  left: 10px; top: 50%;
+  margin-top: -20px;
+}
+div[data-name=character] > a:nth-child(2) {
+  background-position: 0 -40px;
+  position: absolute;
+  right: 10px; top: 50%;
+  margin-top: -20px;
+}
+a {
+  z-index: 9999; /*없으면 클릭안됨 뒤쪽으로 빠져있는 상태라 z-index로 앞으로 튀어나오게함 아니면 코드 맨밑에 써도 되긴함*/
+}
+
+/* article img */
+div[data-name=character] > article {
+  width: 960px; height: 500px;
+  position: absolute;
+  left: 0; top: 500px; /*평상시엔 보이지 않는 article이*/
+  transition: 2s;
+}
+div[data-name=character] > article.show { /*JS에 의해 show를 부여받은 article이 올라옴*/
+  top: 0;
+}
+/* article img > sub content */
+article {
+  position: relative; /*h1, p 모두 absolute줄거라*/
+}
+article > h1 {
+  position: absolute;
+  left: 90px; top: 40px;
+  font-size: 30px;
+}
+article > img:nth-of-type(1) { /*인물 이름 사진*/
+  position: absolute;
+  left: 200px; top: 50px;
+}
+article > img:nth-of-type(2) { /*인물 사진*/
+  position: absolute;
+  left: 100px; top: 120px;
+  box-shadow: 0 5px 10px 10px;
+  border-radius: 10px;
+}
+article > p {
+  position: absolute;
+  left: 450px; top: 110px;
+  width: 500px;
+}

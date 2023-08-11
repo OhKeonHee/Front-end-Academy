@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.transform {
+  margin: 50px;
+  background-color: skyblue;
+  font-size: 60px;
+  font-weight: bold;
+  width: 600px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transform:hover span {
+  transform: translateY(-50px);
+}
+.transform span:nth-child(1) {
+  transition: all .3s ease-in-out;
+}
+.transform span:nth-child(2) {
+  transition: all .3s ease-in-out .1s;
+}
+.transform span:nth-child(3) {
+  transition: all .3s ease-in-out .2s;
+}
+.transform span:nth-child(4) {
+  transition: all .3s ease-in-out .3s;
+}
+.transform span:nth-child(5) {
+  transition: all .3s ease-in-out .4s;
+}
+.transform span:nth-child(6) {
+  transition: all .3s ease-in-out .5s;
+}
+.transform span:nth-child(7) {
+  transition: all .3s ease-in-out .6s;
+}
+.transform span:nth-child(8) {
+  transition: all .3s ease-in-out .7s
+}
+.transform span:nth-child(9) {
+  transition: all .3s ease-in-out .8s;
+} */
+
+/* 심장뛰기 */
+/* .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 300px;
+  color: rgb(250, 99, 124);
+  animation: heartbeat 1s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+} */
+
+/* 별 돌기 */
+/* .star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 300px;
+  color: yellow;
+  animation: rotate .7s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+} */
+
+.container {
+  width: 50vw;
+  margin: 0 auto;
+}
+.container h3 {
+  margin: 20px 0;
+}

@@ -1,0 +1,51 @@
+/* --------------------- 그림판 만들기 (선굵기, 색상 변경가능) --------------------- */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #fff;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: top;
+  width: 100%;
+}
+#toolbar {
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+#toolbar button {
+  background-color: #cecece;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: .8rem;
+  cursor: pointer;
+}
+#toolbar label {
+  font-size: .8rem;
+} */
+
+/* --------------------- 버튼 누르면 랜덤색 사각형이 기본 회색 사각형 기준으로 생성되면서 빙글빙글 돌아요 */
+/* body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  border: 2px solid #ccc;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+} */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section {
+      width: 300px; height: 300px;
+      border: 5px solid black;
+      margin: 500px;
+    }
+    
+    div {
+      width: 300px; height: 300px;
+      background-color: red;
+      transform: rotate(60deg);
+      transform-origin: 0 100%; /*중심점 정해주기 (x,y)*/
+      /* transform: rotate(60deg) translateX(50px); */
+      /*순서에 따라 결과값이 달라짐 ex)기울이고 이동시키면 기울인 도형 XY기준으로 이동함*/
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,103 @@
+//변수
+@ColumnWidth: 60px;
+@GutterWidth: 20px;
+
+//믹스 인
+.span(@column) {
+  width: (@ColumnWidth * @column) + (@GutterWidth * (@column - 1));
+}
+
+//스타일 사용
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.row {
+  overflow: hidden;
+}
+
+.span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11, .span_12 {
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.span_1 { .span(1); }
+.span_2 { .span(2); }
+.span_3 { .span(3); }
+.span_4 { .span(4); }
+.span_5 { .span(5); }
+.span_6 { .span(6); }
+.span_7 { .span(7); }
+.span_8 { .span(8); }
+.span_9 { .span(9); }
+.span_10 { .span(10); }
+.span_11 { .span(11); }
+.span_12 { .span(12); }
+
+/*
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="span_12">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span_6">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+      <div class="span_6">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span_4">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+      <div class="span_4">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+      <div class="span_4">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span_3">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+      <div class="span_3">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+      <div class="span_3">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+      <div class="span_3">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta, sit voluptate at optio delectus voluptates? Expedita dolor doloremque modi repellendus in reiciendis, iste vitae molestiae aut pariatur, eius minus.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+*/

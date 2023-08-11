@@ -1,0 +1,72 @@
+** styled-components 심화과정
+
+- index.js 에 ThemeProvider 적용
+dark, light 테마를 styled-components로 적용하기
+
+- 이미 생성한 자바스크립트 파일을 타입스크립트로 변경하기
+
+  1) 자바스크립트 -> 타입스크립트 변경
+    npm i typescript
+    npm i @types/node  
+    -> 노드는 자바스크립트 런타임이기에 @types로 타입스크립트를 사용한다고 노드에게 알려줘야함
+    오류가 나면 npm i --force @types/node
+    npm i @types/react
+    npm i @types/react-dom
+
+    1. npm i --force @types/node @types/react @types/react-dom -> 한번에 설치
+    2. App.js, index.js -> tsx로 확장명 변경
+    3. tsconfig.json 만들기
+    4. npm i --force @types/styled-components 
+      -> 로 기존 js용 말고 ts용으로 다시 설치 (--force로 강제로 설치해야함)
+
+  2) 처음부터 타입스크립트로 시작
+    npx create-react-app . --template typescript
+
+
+- Nullish operator: 왼쪽항의 값이 null이거나 혹은 undefined인 경우에만 오른쪽 항의 값을 반환하고 나머지는 왼쪽항의 값을 반환
+(??) -> 논리 회로 평가
+ex ) 
+  const a = null
+  const b = undefined
+  const c = 0
+  const d = ""
+  console.log(a ?? "default") -> default출력 (a가 null이기에)
+
+- 타입스크립트
+  - Props는 객체이다
+  - Props 타입정의는 거의 대부분 interface 형식의 타입정의
+  - Props 타입정의와 styled-components의 타입정의를 위한 interface는 별도로 관리하는게 좋음
+  - interface로 객체 타입 관리시, 선택적 프로퍼티 존재
+  - default 프로퍼티 활용 -> 부모요소에서 값을 전달하지 않더라도 값을 적용할 수 있음
+  - 자바스크립트 문법: 단락회로 평가 -> Nullish operator (*좌 우항 값을 선택할 때 사용)
+
+==================  * 타입스크립트 hook
+- useState(): 컴포넌트를 업데이트하고 싶을 때 사용하는 hook
+  state 변경 시, 컴포넌트가 새로고침
+  state변수 값을 변경시켜주는 역할 => state 상태 변화 함수
+
+
+https://legacy.reactjs.org/docs/events.html -> 리액트에서 사용하는 이벤트 종류들 보여줌
+
+- d.ts: 외부 패키지 혹은 라이브러리를 통해서 모듈 값을 가져오고자 할 때, 그리고 해당 모듈값을 타입으로 정의하고자 할 때, 기본적으로 노드는 타입스크립트를 모르기 때문에, "d.ts"파일을 활용해 타입을 정의
+  https://styled-components.com/docs/api#create-a-declarations-file 에서 가져옴
+  styled-components 사이트에서 검색에 d.ts검색하면 바로뜸
+
+  1. src에 styled.d.ts 생성 후 작성
+  2. theme.tsx에서 불러오기
+
+================= 리액트 라우터
+  - 페이지 분기를 목적으로 사용
+  npm i --force react-router-dom@5.3.4 -> 뒤에 버전 안쓰면 최신버전 깔림
+  npm i --force react-router-dom@latest -> 최신버전
+
+  === createBrowserRouter로 페이지 분기하기
+  여태 방식과는 전혀다름
+  App.jsx를 Root.jsx로 파일명 바꾸기
+  index.jsx에서도 App관련 삭제하고 RouterProvider로 대체
+
+  Root에서 Outlet필수!!
+  - createBrowserRouter => 각각의 페이지를 배열형태로 정의
+  - 각 페이지를 분기시키는 Router를 배열객체 형식으로 표현할 수 있게 하는 함수
+  - react Outlet 컴포넌트를 통해서 url경로를 찾아가게 됨
+  - Outlet 컴포넌트는 랜더링하고자 하는 route의 경로값을 받아서 웹 브라우저 화면에 랜더링함

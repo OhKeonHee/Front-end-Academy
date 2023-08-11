@@ -1,0 +1,42 @@
+react 폴더 생성 후 해당 폴더 터미널에서
+> npm i react-router-dom
+
+이후 index.tsx에서 
+> import { BrowserRouter } from 'react-router-dom';
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <BrowserRouter> -------> 렌더링
+    <App />
+  </BrowserRouter>
+);
+
+* 동적 경로 라우팅
+> 특정 페이지에 값을 부여해서 URL을 생성해주는 것
+> 일정한 패턴을 가지고 있는 경우
+
+--- 방법
+1) URL 파라미터
+페이지의 크기가 크지않다면 사용
+ex )
+https://emotion-diary-winterlood.web.app/1
+https://emotion-diary-winterlood.web.app/2
+
+2) 쿼리스트링
+URL?Key=value&key=value&Key=value
+ex ) (네이버에서 나이키를 검색했을 때) 
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EB%82%98%EC%9D%B4%ED%82%A4 -> 쿼리스트링 방식
+
+
+0628 라우터 정리
+1. 랜더링이 되어지는 컴포넌트를 제어할 수 있는 컴포넌트 접속
+import 설치하기
+
+2. 라우팅을 하고자 하는 렌더링 컴포넌트에 접속해서
+- import { Routes, Route } from 'react-router-dom';
+상위요소 = {Routes}
+하위요소 = {Route}
+
+3. 각각의 컴포넌트 사이에서 이동
+

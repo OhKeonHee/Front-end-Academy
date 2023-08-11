@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": false,
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {"*": ["node_modules/*"]},
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "strictPropertyInitialization": false,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "noImplicitThis": false
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"] // 현재 작업 중인 파일들이 어디에 모여있는지 정의하는 옵션 : include
+}

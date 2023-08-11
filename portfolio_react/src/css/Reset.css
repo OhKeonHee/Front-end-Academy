@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+* ::-webkit-scrollbar {
+  width: 10px;
+}
+* ::-webkit-scrollbar-thumb {
+  background-color: var(--footer-btn);
+}
+* ::-webkit-scrollbar-track {
+  background-color: var(--nav-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+.App {
+  --nav-bg-color: #282C34;
+  --side-bg-color: #282C34;
+  --main-bg-color: #282C34;
+  --explorer-bg-color: #21252B;
+  --explorer-hr-color: #282C34;
+  --footer-bg-color: #21252B;
+  --footer-btn: #4D78CC;
+  --font-color: rgba(255, 255, 255, 0.5);
+  --footer-font-color: rgba(255, 255, 255, 0.5);
+  --hover-color: rgba(255, 255, 255, 0.2);
+  --title: #fff;
+  --body-nav-btn-bg: #21252B;
+}
+
+.App.bright {
+  --nav-bg-color: #DDDDDD;
+  --side-bg-color: #1D2126;
+  --main-bg-color: #fff;
+  --explorer-bg-color: #F2F2F2;
+  --explorer-hr-color: #F2F2F2;
+  --footer-bg-color: #0477BF;
+  --footer-btn: #1B8C63;
+  --font-color: #000;
+  --footer-font-color: #fff;
+  --hover-color: rgba(0, 0, 0, 0.2);
+  --title: #000;
+  --body-nav-btn-bg: #e7e7e7;
+}/*# sourceMappingURL=Reset.css.map */

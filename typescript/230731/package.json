@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@types/node": "^20.4.5",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "name": "230731",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc && node dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

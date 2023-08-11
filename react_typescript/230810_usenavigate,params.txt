@@ -1,0 +1,5 @@
+useNavigate() VS Link
+  - Link: html, css a대체자 (* 사용자가 어떤 무언가를 클릭해서 페이지 이동)
+  - useNavigate(): 로그인 (*사용자 ID / PW => 페이지 변경 / 1) 정상적 2) 비정상적)
+
+useParams

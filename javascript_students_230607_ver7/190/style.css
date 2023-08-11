@@ -1,0 +1,8 @@
+@import url('/190/style1.css');
+.followAnimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  font-size: 5rem;
+}

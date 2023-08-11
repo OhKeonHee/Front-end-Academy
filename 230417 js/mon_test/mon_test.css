@@ -1,0 +1,16 @@
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+#darkmod {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+}
+legend {
+  font-weight: bold;
+}
+.change {
+  background-color: black;
+  color: white;
+}
