@@ -1,0 +1,13 @@
+.container .category //검정
+	.category-inner
+		.main-header //빨강_1
+			[same html structure]
+		
+		.category-content //빨강_2
+			
+			.category-accordian
+				.title, .button * 5
+					.ul .detail > ( li > a ) * 5
+			
+		.gnb //빨강_3
+			[same html structure]

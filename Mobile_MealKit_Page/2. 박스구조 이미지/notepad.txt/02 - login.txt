@@ -1,0 +1,32 @@
+.container .signin / 검정
+	.signin-inner
+		.signin-photo    /빨강_1
+			img
+			
+		.signin-content  /빨강_2
+			
+			.signin-header /파랑_1
+				h2 .logo
+				p
+			
+			.input-field   /파랑_2
+				input [type=email]
+				input [type=password]
+			
+			.status /파랑_3
+				label
+					input [type=checkbox], em
+				a
+			
+			button .btn-signin /로그인 버튼
+			
+			.join-member /파랑_4
+				a
+			
+			.easy-signin /파랑_5
+				span
+				div
+					( a > img ) * 5
+			
+		.gnb			 /빨강_3
+			( a > img, span ) * 5

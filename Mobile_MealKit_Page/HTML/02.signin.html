@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02.Signin</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script src="/JS/script.js"></script>
+</head>
+<body>
+  <div class="container signin">
+    <div class="signin-inner">
+      <div class="signin-photo"></div>
+      <div class="signin-content">
+        <div class="signin-header">
+          <h2 class="logo" onclick="location.href='04.main.html'">Today's MealKit</h2>
+          <p>로그인 후 이용하여 다양한 혜택을 만나보세요.</p>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="이메일 입력" />
+          <input type="password" placeholder="비밀번호 입력" />
+        </div>
+        <div class="status custom-chk">
+          <label>
+            <input type="checkbox" /><em></em>자동 로그인
+          </label>
+          <a href="#">아이디/비밀번호 찾기</a>
+        </div>
+        <button class="btn-primary btn-signin" onclick="location.href='04.main.html'">로그인</button>
+        <div class="join-member">
+          아직 회원이 아니신가요? <a href="/HTML/03.signup.html">회원가입</a>
+        </div>
+        <div class="easy-signin">
+          <span>SNS 계정으로 간편 로그인</span>
+          <div class="social-btn">
+            <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2F#login"><img src="/imgs/sns1.svg" alt=""></a>
+            <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"><img src="/imgs/sns2.svg" alt=""></a>
+            <a href="https://ko-kr.facebook.com/"><img src="/imgs/sns3.svg" alt=""></a>
+            <a href="https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Dko%26sa%3DX%26ved%3D0ahUKEwi4it7nkOz9AhV0TmwGHSSIAhIQPAgI&ec=GAZAmgQ&hl=ko&passive=true&ifkv=AWnogHclDN68edSR46soLNrkZ9uRef-_upbzPju2ICqbTwcEBwLcttRYjLqG-RKxzBUC0jKHMPLlKQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="/imgs/sns4.svg" alt=""></a>
+            <a href="https://appleid.apple.com/sign-in"><img src="/imgs/sns5.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--GNB include-->
+    <div class="gnb-include"></div>
+    <!--GNB include-->
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.container .signup /검정
+	.signup-inner
+		
+		.main-header /빨강_1
+			button .btn-back > font-icon /파랑
+			h2 .logo /파랑
+			.user-alarm > font-icon /파랑
+			
+		.signup-content /빨강_2
+			.signup-field //이메일
+				span > em(강조태그)
+				input [type=email]
+			
+			.signup-field //비밀번호
+				span > em
+				input [type=password]
+			
+			.signup-field //비밀번호 확인
+				span > em
+				input [type=password]
+			
+			.signup-field //생년월일
+				span > em
+				div
+					input [type=text]
+					select
+					select
+			
+			.signup-field //휴대전화
+				span > em
+				input [type=text]
+				button .btn-getcode
+			
+			.agree-term //동의란
+				(label > input [type=checkbox]) * 3
+			
+			button .btn-signup //가입하기 버튼
+		
+		.gnb /빨강_3
+			[same html structure]

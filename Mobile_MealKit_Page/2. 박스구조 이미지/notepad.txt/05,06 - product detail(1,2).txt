@@ -1,0 +1,71 @@
+.container .products-detail
+	.product-detail-inner
+		
+		.product-detail-header
+			.back-logo	// <, today's mealkit
+				button .btn-back > font-icon
+				h2 .logo
+			
+			.navigator //아이콘 3개
+				button .user-search > font-icon
+				button .user-home > font-icon
+				button .user-cart > font-icon
+			
+		.product-detail-content
+			.product-detail-slider-outer
+				.product-detail-slider
+					a > img
+			
+			.product-info //별점, new/hot버튼, 품목명, 가격, 배송정보
+				.product-rating
+					.stars
+						font-icon * 5, span
+						
+				.product-badge
+					.badge .new
+					.badge .hot
+					
+				.product-title
+					h3
+					div
+						span, strike, b
+				
+				.product-delivery-info
+					span
+					div
+						span * 3
+						
+			.product-detail
+				[normal html structure] //텍스트,이미지 반복
+				
+			.products-accordian //상품후기 섹션
+				.title  //상품후기
+				.detail //상품후기 내부 평점
+				.title	//상품문의
+				.detail
+				.title	//배송안내
+				.detail
+				.title	//교환반품
+				.detail
+				
+		
+		.product-detail-order-info //구매영역 //구매하기 누르면 영역이 올라오면서 06으로 바뀜 
+			.products-order-choice
+				.wish
+				button .btn-order-choice
+			
+			===============//06-detail_2======================
+			.product-order-final
+				.products-order-final-info //내일도착, 품목명, 가격, 수량 영역
+					.badge .arrival
+					.product-title
+						[same html structure]
+				
+				.payment-benefit // 결제혜택 영역
+					b
+					span > a
+				
+				.product-order-btns //장바구니, 구매 버튼 영역
+					button .btn-cart
+					button .btn-now-order
+				

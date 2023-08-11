@@ -1,0 +1,47 @@
+.container .mypage
+	.mypage-inner
+	
+		.main-header
+			[same html structure]
+			
+		.mypage-content
+			.user-info //회원정보
+				user-profile
+					img
+				.user-summary
+					.rating
+						b, span, font-icon
+					h2.nickname
+					
+					.point-coupon
+						.point
+							span * 2
+							
+						.coupon
+							span *2
+			
+			.delivering //배송 중 상품
+				h2
+				.delivering-items
+					.delivering-item
+						img.thum
+						desc
+							span, b
+					
+					.delivering-item
+						img.thum
+						desc
+							span, b
+			
+			.banner //배너사진
+				a > img
+			
+			
+			.user-shortcut //메뉴 목록
+				(a > font-icon, span, .btn-right) * 8
+			
+			button .btn-signout //로그아웃 버튼 
+				
+			
+		.gnb
+			[same html structure]

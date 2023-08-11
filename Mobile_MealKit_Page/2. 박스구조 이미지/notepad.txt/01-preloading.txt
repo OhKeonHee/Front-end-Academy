@@ -1,0 +1,9 @@
+.container .preloading / 검정
+	.preloading-inner
+		img
+	.heading-preloading / 빨강
+		h2.logo
+		p.slogan / 파랑
+			span
+			span
+			span

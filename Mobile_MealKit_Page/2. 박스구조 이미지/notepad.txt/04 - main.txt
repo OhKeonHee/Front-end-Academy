@@ -1,0 +1,93 @@
+.container .front
+	.front-inner
+		.main-header
+			[same html structure]
+			
+			
+		.front-content
+			.category-navigation
+			
+			
+			.front-slider
+			
+			
+			.goods-suggestion .today //취향저격 추천상품 섹션
+				.goods-suggestion-header
+					h2, p
+				.goods-suggestion-items
+					.goods-suggestion-item
+							.thum
+								img
+									
+							.desc
+								.goods-badge
+									.badge .new
+									.badge .hot
+								
+								.goods-title
+									h3
+									div
+										span, b, strike
+
+			
+			.banner
+			
+			
+			.goods-suggestion .new-arrival //신상품
+				.goods-suggestion-header
+						h2, p
+					.goods-suggestion-items
+						.goods-suggestion-item
+							.thum
+								img
+							
+							.desc
+								.goods-badge
+									.badge .new
+									.badge .hot
+								
+								.goods-title
+									h3
+									div
+										span, b, strike
+						
+					button.goods-suggestion-more
+			
+			.banner
+			
+			
+			.food-type
+				.food-type-tab-inner
+					input [type=radio] * 5
+					.food-type-tab-btn * 5 //버튼을 누르면 하위 tabs(음식목록)이 바뀜
+					.food-type-tabs
+						.food-type-tab
+							.tab-item
+								img
+							.tab-desc
+								.badge-wish // new,hot,하트아이콘
+									.badge .new,
+									.badge .hot,
+									.badge .wish
+								.goods-title
+									h3
+									div  //30%, 가격, 원래가격
+										span, b, strike
+					
+				a .btn-goods-suggestion-more
+			
+			.food-footer
+				div_top
+					h3
+					.company-link > a * 4
+				
+				.company-info
+					.company-info-title
+						h3, button .btn-viewmore
+	  				
+					.company-info-more
+						span * 5
+		
+		
+		.gnb
+			[same html structure]
