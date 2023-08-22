@@ -1,0 +1,30 @@
+1. 리액트에서 컴포넌트 효율성을 촤ㅣ적화 시켜주기 위한 메서드
+  -> React.memo(): 메모이제이션
+  ex ) export default React.memo(DraggableCard) : 변화하는 컴포넌트만 렌더링
+  (a~f 중 위치를 움직일때 움직인 값만 렌더링함, 콘솔창으로 toDo확인)
+
+2. 자바스크립트 배열객체 안에 들어가있는 아이템을 선택해서 하나씩 반복실행 하고자 할 때, map()
+
+3. 자바스크립트 객체타입에서 map()와 동일하게 작동할 수 있는 메서드는? => Object
+ ex) ========== console 창 ==============
+    const toDos = {
+        x: ["a", "b"],
+        y: ["n", "t"]
+    }
+
+    Object.keys(toDos) -> ['x', 'y']
+
+    toDos -> {x: Array(2), y: Array(2)}
+
+    toDos["x"] -> ['a', 'b']
+
+    Object.keys(toDos).map(boardId => toDos[boardId]) -> [Array(2), Array(2)]
+
+    ** Object.keys(): 객체가 가진 key만 배열로 추출해주는 메서드
+    ** Object.values(): 객체가 가진 value값만 배열로 추출해주는 메서드
+
+
+- 자바스크립트: html요소안에 입력되어있는 클래스 혹은 아이디값을 가져와서 특정변수에 할당하는 역할
+  > QuerySelector, getElementById
+
+- 리액트: useRef()
