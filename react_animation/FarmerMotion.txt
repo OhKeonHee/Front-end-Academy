@@ -1,0 +1,9 @@
+1. Farmer-motion 특징
+  - 애니메이션 시작지검 정의: initial
+  - 애니메이션 실행단계 정의: animate
+
+2. useRef(): JS > html 안에 포함된 요소를 찾아서 이벤트를 적용하고자 할 때 사용했던 DOM메서드 대체
+
+3. useMotionValue(): Farmer-motion의 value값이 저장되는 공간
+
+4. useTransform(): useMotionValue()를 통해서 확보한 value값을 또 다른 애니메이션 값으로 사용하고자 할 때 실행할 수 있는 함수
