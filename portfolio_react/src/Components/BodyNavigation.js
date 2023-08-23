@@ -13,9 +13,7 @@ const BodyNavigation = ({ handleSelect, select, explorerBtn }) => {
             className={`${select === it.id ? 'select' : ''}`}
             key={index}
             >
-            <svg viewBox='0 0 24 24' className='icon' fill={it.color}>
-              <path d={it.path}></path>
-            </svg>
+            <it.Icon />
             {it.name}
           </button>
         ))}
