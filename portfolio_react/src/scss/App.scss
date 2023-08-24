@@ -190,7 +190,7 @@
 
 // ===== Home
 .Home {
-  width: 100%;
+  width: calc(100vw - 300px);
   position: relative;
   padding-top: 50px;
   display: flex;
@@ -530,14 +530,16 @@
   .code-side {
     padding-left: 50px;
     color: var(--font-color);
-    margin-top: 7px;
+    margin-top: 12px;
+    line-height: 1.35;
     > h1 {
       margin-bottom: 10px;
     }
   }
   .contact-main {
     font-family: 'JetBrains Mono', monospace;
-    margin-top: 3px;
+    margin-top: 13px;
+    line-height: 1.5;
     > h1 {
       margin-left: 20px;
       font-size: 1.8em;
@@ -547,8 +549,8 @@
     }
     > div {
       margin-left: 50px;
-      margin: 5px 50px;
-      height: 43px;
+      margin: 6px 50px;
+      height: 47px;
       > span {
         font-size: 1.8em;
         font-weight: bold;
@@ -574,7 +576,7 @@
   }
   .terminal {
     width: calc(100vw - 300px);
-    height: 70%;
+    height: 60%;
     color: var(--font-color);
     .terminal-nav {
       width: 100%;
@@ -626,31 +628,33 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
-      padding: 10px 50px;
+      padding: 0 20px;
       h1 {
         color: #fa9d47;
+        font-size: 24px;
+        margin-top: 20px;
       }
       form {
         width: 70%;
         height: 100%;
-        padding: 20px;
+        padding: 10px;
         padding-left: 0;
-        font-size: 16px;
+        font-size: 12px;
         > * {
           margin: 5px 0;
           width: 100%;
         }
         > input {
           height: 50px;
-          font-size: 24px;
+          font-size: 18px;
           outline: none;
           padding: 0 5px;
         }
         textarea {
           resize: none;
-          height: 300px;
+          height: 200px;
           outline: none;
-          font-size: 24px;
+          font-size: 18px;
           padding: 10px;
           font-family: 'Noto Sans KR', sans-serif;
         }
