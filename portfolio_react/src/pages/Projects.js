@@ -5,71 +5,230 @@ import ReactIcon from '../icons/ReactIcon'
 import HtmlIcon from '../icons/HtmlIcon'
 import CssIcon from '../icons/CssIcon'
 import JsIcon from '../icons/JsIcon'
-import Cyworld from '../imgs/Cyworld.PNG'
+import mealkit_mobile from '../imgs/mealkit_mobile.PNG'
+import academy_uiux_page from '../imgs/academy_uiux_page.PNG'
+import music_play from '../imgs/music_play.PNG'
 import first_portfolio from '../imgs/first_portfolio.PNG'
+import second_portfolio from '../imgs/second_portfolio.PNG'
+import Cyworld from '../imgs/Cyworld.PNG'
+import { VscGithubInverted, VscGlobe } from 'react-icons/vsc'
 
 const Wrapper = styled.div`
   width: calc(100vw - 300px);
   color: var(--font-color);
   padding: 10px 20px;
-  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 `
 const Title = styled.h1`
   font-family: Consolas, 'Courier New', monospace;
+  padding: 10px 20px;
+  color: var(--font-color);
 `
 const Project = styled.div`
-  width: 33%;
+  width: 32.7%;
+  /* border: 1px solid red; */
+  background-color: var(--explorer-bg-color);
+  position: relative;
+  margin-bottom: 20px;
+`
+const Project_num = styled.div`
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: var(--footer-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  color: white;
+  top: 5px;
+  left: 5px;
+`
+const SkillSec = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
 `
 const Icons = styled.div`
   display: flex;
+  gap: 5px;
   svg {
     width: 30px;
   }
 `
-const Thumbnail = styled(motion.img)`
+const Img = styled(motion.img)`
   width: 100%;
-  height: auto;
-  object-fit: contain;
 `
-
+const Overlay = styled(motion.div)`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  a {
+    color: #fff;
+    width: 60%;
+    text-align: center;
+    display: block;
+    transform: translateY(-25%);
+    background-color: transparent;
+    border: 3px solid var(--footer-btn);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    &:hover {
+      background-color: var(--footer-btn);
+    }
+  }
+`
+const Project_title = styled.h3`
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--font-color);
+`
+const Project_read = styled.h3`
+  font-weight: 300;
+  padding: 10px 5px;
+  line-height: 1.8;
+  white-space: pre-line;
+`
 const project_arr = [
   {
     id: 1,
-    projectName: 'Mobile MealKit Page',
-    date: '23 / 03 / 22',
+    projectName: '모바일로 만든 밀키트페이지',
+    date: '23/03/14 ~ 23/03/22',
     HtmlIcon: HtmlIcon,
     CssIcon: CssIcon,
     JsIcon: JsIcon,
     ReactIcon: 'x',
     domain: 'https://ogh-mealkit-mobile.netlify.app/',
-    thumbnail: first_portfolio,
-    read: `23/03/14 ~ 23/03/22 첫 모바일 웹페이지 (밀키트 판매 사이트)
-    HTML 파일, CSS 파일 폴더 별로 관리
-    include 활용하여 겹치는 Header와 footer를 사용
-    figma를 사용해 프로젝트 디자인
-    Slick slider 플러그인 사용
-    Jquery 사용`
+    github: 'https://github.com/OhKeonHee/Mobile_MealKit_Page',
+    thumbnail: mealkit_mobile,
+    read: `모바일 웹페이지 (밀키트 판매 사이트)
+    include 활용하여 겹치는 Header와 footer를 사용했습니다.
+    figma를 사용해 프로젝트 디자인했습니다.
+    Slick slider 플러그인을 사용해 슬라이드 기능을 구현했습니다.
+    Jquery를 사용했습니다.`
   },
+  {
+    id: 2,
+    projectName: 'UI/UX 학습용 페이지',
+    date: '23/03/28 ~ 23/04/04',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: 'x',
+    ReactIcon: 'x',
+    domain: 'https://ogh-academy-uiux-page.netlify.app/',
+    github: 'https://github.com/OhKeonHee/Academy_Page_UIUX',
+    thumbnail: academy_uiux_page,
+    read: `CSS의 심화내용
+    파일을 분할하여 import
+    전후선택자, grid학습
+    `
+  },
+  {
+    id: 3,
+    projectName: '음악 재생 페이지',
+    date: '23/04/04',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: 'x',
+    domain: 'https://ogh-music-play.netlify.app/',
+    github: 'https://github.com/OhKeonHee/music_play_page',
+    thumbnail: music_play,
+    read: `HTML, CSS, JS를 활용한 음악재생 페이지
+    JS를 활용해 플레이 버튼을 클릭하면 음악 앨범 이미지 rotate값과 traslate값 바꾸기
+    그에 따른 배경 이미지를 증감연산자를 이용해 이미지 파일명을 index값으로 i + 1로 바꾸기
+    플레이버튼과 일시정지 버튼 마다 onClickListener를 부여해서 재생과 사진에 class 부여
+    이전 다음 버튼마다 클릭리스너를 사용해 음악 리스트 프레임을 rotate로 회전시키기`
+  },
+  {
+    id: 4,
+    projectName: '첫 번째 포트폴리오 연습',
+    date: '23/03/20 ~ 23/03/31',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: 'x',
+    domain: 'https://ogh-1st-portfolio.netlify.app/',
+    github: 'https://github.com/OhKeonHee/1st_portfolio',
+    thumbnail: first_portfolio,
+    read: ``
+  },
+  {
+    id: 5,
+    projectName: '두 번째 포트폴리오 연습',
+    date: '23/04/04 ~ 23/05/04',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: 'x',
+    domain: 'https://ogh-2nd-portfolio.netlify.app/',
+    github: 'https://github.com/OhKeonHee/2nd_portfolio',
+    thumbnail: second_portfolio,
+    read: ``
+  },
+  {
+    id: 6,
+    projectName: '싸이월드, JS를 활용한 끝말잇기',
+    date: '23/05/11 ~ 23/05/12',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: 'x',
+    domain: 'https://ogh-cyworld.netlify.app/',
+    github: 'https://github.com/OhKeonHee/Cyworld_Page',
+    thumbnail: Cyworld,
+    read: ``
+  },
+  
 ]
 
 const projects = () => {
   return (
-    <Wrapper className='Projects'>
+    <div className='Projects'>
       <Title>💻 It's My Projects</Title>
-      {project_arr.map((it) => (
-        <Project key={it.id}>
-          <Thumbnail whileHover={{scale: 1.2}} src={it.thumbnail} />
-          <Icons>
-            <it.HtmlIcon />
-            <it.CssIcon />
-            <it.JsIcon />
-            <it.ReactIcon />
-          </Icons>
-          {it.read}
-        </Project>
-      ))}
-    </Wrapper>
+      <Wrapper>
+        {project_arr.map((it) => (
+          <Project key={it.id}>
+            <Project_num>{it.id}</Project_num>
+              <Overlay whileHover={{ opacity: 1 }}>
+                <a href={it.domain} target='_blank'>
+                  <VscGlobe style={{transform: 'translateY(2px)'}} /> 프로젝트 보기
+                </a>
+                <a href={it.github} target='_blank'>
+                  <VscGithubInverted style={{transform: 'translateY(2px)'}} /> 깃허브 보기
+                </a>
+              </Overlay>
+              <Img src={it.thumbnail} />
+            <Project_title>{it.projectName}</Project_title>
+            <SkillSec>
+              <Icons>
+                <it.HtmlIcon />
+                <it.CssIcon />
+                <it.JsIcon />
+                <it.ReactIcon />
+              </Icons>
+              {it.date}
+            </SkillSec>
+            {/* <Project_read>
+              프로젝트 공부내용 : <br />
+              {it.read}
+            </Project_read> */}
+          </Project>
+        ))}
+      </Wrapper>
+    </div>
   )
 }
 
