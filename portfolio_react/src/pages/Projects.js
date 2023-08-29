@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import { styled } from 'styled-components'
 import { motion } from 'framer-motion'
 import ReactIcon from '../icons/ReactIcon'
@@ -11,6 +12,13 @@ import music_play from '../imgs/music_play.PNG'
 import first_portfolio from '../imgs/first_portfolio.PNG'
 import second_portfolio from '../imgs/second_portfolio.PNG'
 import Cyworld from '../imgs/Cyworld.PNG'
+import TodoList from '../imgs/react_todolist.PNG'
+import emotionDiary from '../imgs/react_emotiondiary.PNG'
+import emotionDiary2 from '../imgs/react_emotiondiary_ver2.PNG'
+import adererror from '../imgs/react_adererror.PNG'
+import netflix from '../imgs/react_netflix.PNG'
+import teamproject from '../imgs/teamproject.PNG'
+import react_portfolio from '../imgs/react_portfolio.PNG'
 import { VscGithubInverted, VscGlobe } from 'react-icons/vsc'
 
 const Wrapper = styled.div`
@@ -19,7 +27,8 @@ const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 8px;
 `
 const Title = styled.h1`
   font-family: Consolas, 'Courier New', monospace;
@@ -191,10 +200,101 @@ const project_arr = [
     thumbnail: Cyworld,
     read: ``
   },
+  {
+    id: 7,
+    projectName: '팀프로젝트 모바일, 지역 맛집 어플',
+    date: '23/05/05 ~ 23/06/30',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: 'x',
+    domain: 'https://teamproject-2c38f.firebaseapp.com/',
+    github: 'https://github.com/OhKeonHee/TeamProject_mobileApp',
+    thumbnail: teamproject,
+    read: ``
+  },
+  {
+    id: 8,
+    projectName: '리액트로 만든 TodoList',
+    date: '23/07/11',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: ReactIcon,
+    domain: 'https://ogh-react-todolist.netlify.app/',
+    github: 'https://github.com/OhKeonHee/react_todolist',
+    thumbnail: TodoList,
+    read: ``
+  },
+  {
+    id: 9,
+    projectName: '리액트로 만든 감정다이어리',
+    date: '23/07/12',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: ReactIcon,
+    domain: 'https://ogh-react-emotiondiary.netlify.app/',
+    github: 'https://github.com/OhKeonHee/emotionDiary_react',
+    thumbnail: emotionDiary,
+    read: ``
+  },
+  {
+    id: 10,
+    projectName: '리액트로 만든 감정다이어리2',
+    date: '23/07/13 ~ 23/07/14',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: ReactIcon,
+    domain: 'https://ogh-react-emotiondiary-ver2.netlify.app/',
+    github: 'https://github.com/OhKeonHee/emotionDiary_ver2_react',
+    thumbnail: emotionDiary2,
+    read: ``
+  },
+  {
+    id: 11,
+    projectName: '리액트로 만든 쇼핑몰',
+    date: '23/07/06 ~ 23/07/10',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: ReactIcon,
+    domain: 'https://ogh-react-adererror.netlify.app/',
+    github: 'https://github.com/OhKeonHee/React_ShoppingMall',
+    thumbnail: adererror,
+    read: ``
+  },
+  {
+    id: 12,
+    projectName: '리액트로 만든 넷플릭스',
+    date: '23/07/13 ~ 23/07/14',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: ReactIcon,
+    domain: 'https://ogh-react-netflix.netlify.app/',
+    github: 'https://github.com/OhKeonHee/Netflix',
+    thumbnail: netflix,
+    read: ``
+  },
+  {
+    id: 13,
+    projectName: '리액트로 만든 포트폴리오',
+    date: '23/07/01 ~ 23/08/29',
+    HtmlIcon: HtmlIcon,
+    CssIcon: CssIcon,
+    JsIcon: JsIcon,
+    ReactIcon: ReactIcon,
+    domain: 'https://ogh-react-portfolio.netlify.app/',
+    github: 'https://github.com/OhKeonHee/Portfolio_react',
+    thumbnail: react_portfolio,
+    read: ``
+  },
   
 ]
 
-const projects = () => {
+const Projects = () => {
   return (
     <div className='Projects'>
       <Title>💻 It's My Projects</Title>
@@ -232,4 +332,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects
